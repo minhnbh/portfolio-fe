@@ -1,0 +1,19 @@
+@import "@fontsource/roboto/100.css";
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@import "@fontsource/roboto/900.css";
+
+:root {
+  --background: rgb(10, 16, 30);
+  --darkBackground: rgb(7, 13, 27);
+  --headerHeight: 80px;
+  --fullHeight: calc(100vh - var(--headerHeight));
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+}
