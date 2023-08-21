@@ -19,7 +19,7 @@ import { Email, Phone, Place, LinkedIn } from "@mui/icons-material";
 
 const ContactMe: React.FC = () => {
   return (
-    <Section backgroundColor={COLORS.darkBackground}>
+    <Section backgroundColor={COLORS.darkBackground} id="contact">
       <Container sx={{ paddingBottom: 12.5 }}>
         <SectionTitle>Contact Me</SectionTitle>
         <Grid container spacing={4} marginTop={3}>
@@ -78,7 +78,10 @@ const ContactMe: React.FC = () => {
               Visite my social profile and get connected
             </Typography>
             <SocialProfilesWrapper>
-              <SocialProfile target="_blank" href="https://www.linkedin.com/in/minh-nbh/">
+              <SocialProfile
+                target="_blank"
+                href="https://www.linkedin.com/in/minh-nbh/"
+              >
                 <SocialProfileIcon>
                   <LinkedIn htmlColor={COLORS.contentColor} />
                 </SocialProfileIcon>

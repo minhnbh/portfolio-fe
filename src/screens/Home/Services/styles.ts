@@ -7,7 +7,7 @@ export const ServiceList = styled.div`
 `;
 
 export const ServiceItem = styled.div`
-  border: 1px solid rgb(35, 41, 53);
+  border: 1px solid ${COLORS.darkBorderColor};
   border-radius: 3px;
   padding: 50px 30px;
   display: flex;

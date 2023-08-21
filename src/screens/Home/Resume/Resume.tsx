@@ -57,7 +57,7 @@ const education = [
 const Resume: React.FC = () => {
   return (
     <ResumeContainer>
-      <Section>
+      <Section id="resume">
         <Container>
           <SectionTitle>Resume</SectionTitle>
           <ResumeWrapper>

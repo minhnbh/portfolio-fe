@@ -7,4 +7,5 @@ export const COLORS = {
   headingColor: "rgb(253, 254, 255)",
   contentColor: "rgb(169, 173, 184)",
   borderColor: "rgb(63, 69, 81)",
+  darkBorderColor: "rgb(35, 41, 53)",
 };

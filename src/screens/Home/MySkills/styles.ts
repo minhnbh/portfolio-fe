@@ -24,6 +24,7 @@ export const ExpContent = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: -8px;
 `;
 
 export const ExpTitle = styled.h3`

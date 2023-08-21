@@ -11,7 +11,7 @@ export const ResumeWrapper = styled.div`
 `;
 
 export const MilestonesContainer = styled.div`
-  border-left: 1px solid rgb(35, 41, 53);
+  border-left: 1px solid ${COLORS.darkBorderColor};
   padding-left: 40px;
   margin-left: 20px;
 `;
@@ -37,7 +37,7 @@ export const MilestoneItem = styled.div`
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid rgb(35, 41, 53);
+    border: 2px solid ${COLORS.darkBorderColor};
     content: "";
     position: absolute;
     left: -47px;

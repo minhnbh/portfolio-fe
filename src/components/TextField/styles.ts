@@ -6,7 +6,7 @@ export const TextBox = muiStyled(TextFieldBase)`
     border-color: ${COLORS.borderColor};
     background-color: ${COLORS.lightBackground};
     fieldset {
-        border-color: rgb(35, 41, 53);
+        border-color: ${COLORS.darkBorderColor};
         border-radius: 7px;
     }
     input, textarea {

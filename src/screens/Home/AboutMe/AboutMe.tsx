@@ -23,7 +23,7 @@ const aboutFields = [
 
 const AboutMe: React.FC = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <SectionTitle>About Me</SectionTitle>
         <Grid container spacing={2}>

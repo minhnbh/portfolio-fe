@@ -1,6 +1,5 @@
 import { COLORS } from "@constants/colors";
 import styled from "styled-components";
-import { Button } from "@components/Button";
 
 export const WelcomeText = styled.h2`
   font-size: 36px;

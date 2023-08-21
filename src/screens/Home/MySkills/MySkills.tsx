@@ -12,6 +12,29 @@ import { Section } from "@components/Section";
 import { SectionTitle } from "@components/SectionTitle";
 import { Container, Grid } from "@mui/material";
 
+const skills = [
+  {
+    name: "ReactJS",
+    value: 85,
+  },
+  {
+    name: "React Native",
+    value: 70,
+  },
+  {
+    name: "HTML/CSS",
+    value: 70,
+  },
+  {
+    name: "NodeJS",
+    value: 55,
+  },
+  {
+    name: "AWS",
+    value: 50,
+  },
+];
+
 const MySkills: React.FC = () => {
   return (
     <MySkillsContainer>
@@ -36,21 +59,19 @@ const MySkills: React.FC = () => {
               </SkillDescription>
             </Grid>
             <Grid item md={6}>
-              <ExpContent>
-                <ExpTitle>ReactJS</ExpTitle>
-                <ExpValue>90%</ExpValue>
-              </ExpContent>
-              <ExpSlider contentEditable={false} value={90} max={100} />
-              <ExpContent>
-                <ExpTitle>React Native</ExpTitle>
-                <ExpValue>70%</ExpValue>
-              </ExpContent>
-              <ExpSlider contentEditable={false} value={70} max={100} />
-              <ExpContent>
-                <ExpTitle>HTML/CSS</ExpTitle>
-                <ExpValue>70%</ExpValue>
-              </ExpContent>
-              <ExpSlider contentEditable={false} value={70} max={100} />
+              {skills.map((e) => (
+                <div key={e.name}>
+                  <ExpContent>
+                    <ExpTitle>{e.name}</ExpTitle>
+                    <ExpValue>{e.value}%</ExpValue>
+                  </ExpContent>
+                  <ExpSlider
+                    contentEditable={false}
+                    value={e.value}
+                    max={100}
+                  />
+                </div>
+              ))}
             </Grid>
           </Grid>
         </Container>

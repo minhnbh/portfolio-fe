@@ -1,5 +1,5 @@
 import { NavigationInterface } from "@interfaces/naviagation.interface";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HeaderContainer, HeaderNavigationItem } from "./styles";
 
 export interface HeaderProps {
@@ -16,10 +16,26 @@ const NavigationData = [
 ];
 
 export const Header: React.FC<HeaderProps> = () => {
+  const [y, setY] = useState(0);
+
+  const handleScroll = (e: Event) => {
+    setY((e.currentTarget as any)?.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <HeaderContainer>
+    <HeaderContainer sticky={y > 80}>
       {NavigationData.map((e) => (
-        <HeaderNavigationItem key={e}>{e}</HeaderNavigationItem>
+        <HeaderNavigationItem href={`#${e}`} key={e}>
+          {e}
+        </HeaderNavigationItem>
       ))}
     </HeaderContainer>
   );
